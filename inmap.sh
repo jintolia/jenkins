@@ -1,1 +1,1 @@
-ssh "root@192.168.0.20" 'yum install nmap' 
+ssh "root@192.168.0.20" 'yum install nmap' -f 5 --private-key
