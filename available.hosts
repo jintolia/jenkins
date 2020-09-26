@@ -1,0 +1,7 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2020-09-26 19:55 +03
+Nmap scan report for 192.168.0.1
+Host is up (-0.20s latency).
+MAC Address: 44:32:C8:B5:58:73 (Technicolor CH USA)
+Nmap scan report for 192.168.0.10
+Host is up.
+Nmap done: 40 IP addresses (2 hosts up) scanned in 1.72 seconds
