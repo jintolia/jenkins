@@ -19,6 +19,6 @@ COPY server.py /usr/bin/server.py
 
 RUN chmod +x /usr/bin/server.py
 
-EXPOSE 7000
+EXPOSE 9090
 
 CMD server.py
