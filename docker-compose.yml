@@ -13,8 +13,8 @@ services:
     networks:
       - app-network
   wordpress:
-    depends_on: 
-      - db
+     depends_on: 
+       - db
     image: wordpress:php7.4-fpm-alpine
     container_name: wordpress
     restart: unless-stopped
