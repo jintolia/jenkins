@@ -5,7 +5,14 @@ pipeline {
             steps {
                 git credentialsId: '068c48ae-000d-41bd-8d60-e3e7a7297b89', url: 'git@github.com:jintolia/my_project.git'
             }
-        }        
+        }
+        stage('init environment') {
+            steps {
+                script{
+                load "${env.WORKSPACE}/inv.groovy"
+                }
+            }
+        }
         stage('checkout to backup') {
             when {
                 equals expected: "restore", actual: "${params.START_JOB}"
