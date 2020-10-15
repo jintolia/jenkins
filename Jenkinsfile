@@ -140,10 +140,7 @@ pipeline {
                     ).trim()
                 WP_OK = "HTTP/1.1 200 OK"
                 echo "${WP}"
-                echo "${WP_OK}"
-                if ("${WP}" != "${WP_OK}") {
-                    error('Something went wrong...')
-                }
+                echo "${WP_OK}"                
                 }
             }
         }
